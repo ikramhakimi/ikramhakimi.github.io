@@ -17,6 +17,7 @@
 			body {
 				display: table;
 				width: 100%;
+				background: #101A2B;
 			}
 
 			body > div {
@@ -24,12 +25,30 @@
 				vertical-align: middle;
 				text-align: center;
 			}
+
+			@media(max-width: 736px) {
+				h1 > b {
+					font-size: 0;
+					display: block;
+				}
+
+				h1 > span {
+					font-size: 24px;
+					font-weight: 400;
+					text-transform: uppercase;
+					word-spacing: 4px;
+					letter-spacing: 2px;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div>
-			<h2 style="font-weight: 700; font-size: 28px;">Github</h2>
-			<h1 class="font-weight: 400; font-size: 16px; margin-top: 15px">Ikram Hakimi</h1>
+			<h1 style="font-weight: 700; font-size: 48px; margin: 0; color: #fff;">
+				Github 
+				<b style="color: rgba(255,255,255,.65);">~</b>
+				<span>Ikram Hakimi</span>
+			</h1>
 		</div>
 	</body>
 </html>
